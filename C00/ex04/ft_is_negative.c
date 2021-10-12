@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 16:30:35 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/10 16:35:57 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/12 13:45:13 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,4 @@ void	ft_is_negative(int n)
 		write(1, "N", 1);
 	else
 		write(1, "P", 1);
-}
-
-int	main(void)
-{
-	ft_is_negative(1);
-	ft_is_negative(-1);
-	ft_is_negative(0);
-	ft_is_negative(2);
-	ft_is_negative(999);
-	ft_is_negative(13);
 }

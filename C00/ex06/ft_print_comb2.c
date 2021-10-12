@@ -1,71 +1,53 @@
-/* *********************i***************************************************** */
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_print_comb22.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jinychoi <jinychoi@student.42seoul.kr>     +#+  +:+       +#+        */
+/*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/10 19:01:16 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/10 20:40:23 by jinychoi         ###   ########.fr       */
+/*   Created: 2021/10/11 00:39:06 by jinychoi          #+#    #+#             */
+/*   Updated: 2021/10/12 13:46:06 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-
-
-void	after_up(char a, char b, char c, char d)
-{	
-	while (c <= '9')
-	{	
-		if (b == '9')
-		{
-			c++;
-			continue;
-		}
-		if (a == c)
-			d = b + 1;
-		else
-			d = '0';
-		while (d <= '9')
-		{
-			write(1, &a, 1);
-			write(1, &b, 1);
-			write(1, " ", 1);
-			write(1, &c, 1);
-			write(1, &d, 1);
-			if (a != '9' || b != '8' || c != '9' || d != '9')
-				write(1, ", ", 2);
-			d++;
-		}
-		c++;
+int	adding(char arr[2])
+{
+	if (arr[1] < '9')
+		arr[1] += 1;
+	else if (arr[0] < '9')
+	{
+		arr[1] = '0';
+		arr[0] += 1;
 	}
+	else
+		return (0);
+	return (1);
 }
 
 void	ft_print_comb2(void)
-{	
-	int x;
-	int y;
-	int z;
-	int a;
-	
-	a = '0';
-	x = '0';
-	while (x != ':')
-	{
-		y = '0';
-		while (x <= ':' && y <= '9')
-		{	
-			z = x;
-			after_up(x,y,z,a);
-			y++;
-		}
-		x++;
-	}
-}
-
-int	main(void)
 {
-	ft_print_comb2();	
-	return (0);
+	char	a[2];
+	char	b[2];
+
+	a[0] = '0';
+	a[1] = '0' - 1;
+	while (adding(a))
+	{
+		b[0] = a[0];
+		b[1] = a[1];
+		while (adding(b))
+		{
+			write(1, &a[0], 1);
+			write(1, &a[1], 1);
+			write(1, " ", 1);
+			write(1, &b[0], 1);
+			write(1, &b[1], 1);
+			if (a[0] != '9' || a[1] != '8' || b[0] != '9' || b[0] != '9')
+				write(1, ", ", 2);
+			else
+				return ;
+		}
+	}
 }

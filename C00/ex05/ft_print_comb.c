@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 16:45:19 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/10 17:46:42 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/12 13:45:39 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,4 @@ void	ft_print_comb(void)
 		}
 		i++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_comb();
-	return (0);
 }

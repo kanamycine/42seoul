@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:22:33 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/11 23:58:57 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/12 13:47:04 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,9 +60,4 @@ void	ft_print_combn(int n)
 		i++;
 	}
 	ft_recursive(0, card_arr, n, -1);
-}
-
-int 	main(void)
-{
-	ft_print_combn(2);
 }

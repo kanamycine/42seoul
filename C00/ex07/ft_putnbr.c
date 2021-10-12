@@ -1,74 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr2.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
+/*   By: jinychoi <jinychoi@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/11 00:52:38 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/11 16:32:23 by jinychoi         ###   ########.fr       */
+/*   Created: 2021/10/11 16:36:40 by jinychoi          #+#    #+#             */
+/*   Updated: 2021/10/12 13:46:34 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_int_length(int nb)
+void	ft_putchar(char c)
 {
-	int	count;
-
-	count = 1;
-	if (nb < 0)
-	{
-		nb = nb * -1;
-	}
-	while (nb > 10)
-	{
-		nb = nb / 10;
-		count += 1;
-	}
-	return (count);
-}
-
-void	put_write(int nb, int nb_len, int idx, int flg, char arrnb[])
-{
-	while (nb > 0)
-	{
-		arrnb[idx] = nb % 10 + '0';
-		nb = nb / 10;
-		idx--;
-	}
-	idx = 0;
-	if (!flg)
-		write(1, "-", 1);
-	while (idx < nb_len)
-	{
-		write(1, &arrnb[idx], 1);
-		idx++;
-	}
+	write(1, &c, 1);
 }
 
 void	ft_putnbr(int nb)
 {
-	int		idx;
-	int		nb_len;	
-	int		flg;
-	char	arrnb[nb_len];
-
-	nb_len = ft_int_length(nb);
-
-	flg = 1;
-	if (nb < 0)
+	if (nb == -2147483648)
 	{
-		flg = 0;
-		nb *= -1;
+		write(1, "-2147483648", 11);
+		return ;
 	}
-	idx = nb_len - 1;
-	put_write(nb, nb_len, idx, flg, arrnb);	
-}
-
-int	main(void)
-{
-	ft_putnbr(123);
-	ft_putnbr(-123);
-	return 0;
+	else if (nb < 0)
+	{
+		nb = -nb;
+		ft_putchar('-');
+	}
+	if (nb >= 10)
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
+	}
+	else
+		ft_putchar(nb + '0');
 }

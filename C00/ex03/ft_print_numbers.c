@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 16:14:45 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/10 16:18:10 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/12 13:44:38 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,4 @@
 void	ft_print_numbers(void)
 {
 	write(1, "0123456789", 10);
-}
-
-int	main(void)
-{
-	ft_print_numbers();
 }
