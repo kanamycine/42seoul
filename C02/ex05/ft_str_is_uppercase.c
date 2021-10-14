@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
+/*   By: jinychoi <jinychoi@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/13 23:04:50 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/14 17:15:59 by jinychoi         ###   ########.fr       */
+/*   Created: 2021/10/14 17:31:53 by jinychoi          #+#    #+#             */
+/*   Updated: 2021/10/14 17:32:58 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
+#include <stdio.h>
+
+int	ft_str_is_uppercase(char *str)
 {
-	int	idx;
+	int	i;
+	i = 0;
 
-	idx = 0;
-	if (*str == '\0')
-		return (1);
-	while (*(str + idx) != '\0')
-	{
-		if (!(*(str + idx) >= '0' && *(str + idx) <= '9'))
-			return (0);
 
-		idx++;
-	}
-	return (1);
 }
