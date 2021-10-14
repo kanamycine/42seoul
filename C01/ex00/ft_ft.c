@@ -6,13 +6,11 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 12:18:25 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/13 12:28:31 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/14 09:41:12 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	tf_tf(int *nbr)
+void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }

@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 14:02:56 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/13 15:56:22 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/14 09:31:19 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,4 @@ void	ft_putstr(char *str)
 		write(1, str + i, 1);
 		i++;
 	}
-}
-
-int	main(void)
-{
-	char	str [7];
-
-	str = "string";
-	ft_putstr(str);
 }
