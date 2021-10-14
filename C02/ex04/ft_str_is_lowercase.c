@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 17:17:11 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/14 17:28:59 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/14 18:48:09 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int	ft_str_is_lowercase(char *str)
 	int res;
 
 	i = 0;
-	res = 1;
 	if (*(str + i) == '\0')
 		return (1);
 	while (*(str + i) != '\0')
