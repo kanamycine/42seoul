@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/13 19:58:28 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/16 17:43:20 by jinychoi         ###   ########.fr       */
+/*   Created: 2021/10/16 17:57:41 by jinychoi          #+#    #+#             */
+/*   Updated: 2021/10/16 18:09:44 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	unsigned int	i;
+	unsigned int i;
+	unsigned int j;
 
+	j = 0;
 	i = 0;
-	while (i < n && *(src + i) != '\0')
+	while (src[j] != '\0')
+		j++;
+	if (size == 0)
+		return (j);
+	while (i < size - 1 && src[i] != '\0')
 	{
-		*(dest + i) = *(src + i);
+		dest[i] = src[i];
 		i++;
 	}
-	while(i < n)
-	{
-		*(dest + i) = '\0';
-		i++;
-	}
-	return (dest);
+	dest[i] = '\0';
+	return (j);
 }

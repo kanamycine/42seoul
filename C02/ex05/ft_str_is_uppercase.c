@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 17:31:53 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/14 19:36:45 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/16 17:48:45 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_str_is_uppercase(char *str)
 		return 1;
 	while (*(str + i) != '\0')
 	{
-		if(*(str + i) < 'A' || *(str + i) > 'Z')
+		if(!(*(str + i) >= 'A' && *(str + i) <= 'Z'))
 			return (0);
 		i++;
 	}
