@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 22:46:11 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/16 23:02:13 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/17 10:52:41 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,8 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 
 int main (void)
 {
-	char src[] = "Born to code";
-    	char dest [] = "1337 42";
+	char src[] = "Samuel choi";
+    char dest [] = "seoul 42";
     printf("%i \n", ft_strlcat(dest, src, 20));
     printf("%s \n", dest);
 }

@@ -6,14 +6,13 @@
 /*   By: jinychoi <jinychoi@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 17:17:11 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/17 09:49:29 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/17 13:23:03 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_lowercase(char *str)
 {
 	int	i;
-	int	res;
 
 	i = 0;
 	if (*(str + i) == '\0')
