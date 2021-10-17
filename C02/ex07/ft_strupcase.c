@@ -6,14 +6,14 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 19:51:24 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/16 17:52:46 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/17 09:52:29 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char 	*ft_strupcase(char *str)
+char	*ft_strupcase(char *str)
 {
 	int	i;
-	
+
 	i = 0;
 	while (*(str + i) != '\0')
 	{

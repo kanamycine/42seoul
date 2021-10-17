@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 19:58:28 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/16 17:43:20 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/17 09:37:34 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 		*(dest + i) = *(src + i);
 		i++;
 	}
-	while(i < n)
+	while (i < n)
 	{
 		*(dest + i) = '\0';
 		i++;

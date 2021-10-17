@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 20:10:50 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/16 17:52:22 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/17 09:53:29 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ char	*ft_strlowcase(char *str)
 	i = 0;
 	while (*(str + i) != '\0')
 	{
-		if(*(str + i) >= 'A' && *(str + i) <= 'Z')
+		if (*(str + i) >= 'A' && *(str + i) <= 'Z')
 		{
-			*(str + i) += ' '; 		
+			*(str + i) += ' ';
 		}
-		i++;		
+		i++;
 	}
 	return (str);
 }

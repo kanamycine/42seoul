@@ -6,14 +6,14 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 17:57:41 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/16 18:09:44 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/17 09:54:30 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	unsigned int i;
-	unsigned int j;
+	unsigned int	i;
+	unsigned int	j;
 
 	j = 0;
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 21:48:54 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/16 17:45:36 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/17 09:42:06 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,20 @@
 
 int	ft_str_is_alpha(char *str)
 {
-	int	idx;
+	int	i;
 
-	idx = 0;
-	while (str[idx] != '\0')
+	i = 0;
+	if (str[i] == '\0' )
 	{
-		if (str[idx] < 'A')
+		return (1);
+	}
+	while (str[i] != '\0')
+	{
+		if ((str[i] >= 'A' && str [i] <= 'Z')
+			|| (str [i] >= 'a' && str [i] <= 'z'))
+			i++;
+		else
 			return (0);
-		else if (str[idx] > 'Z' && str[idx] < 'a')
-			return (0);
-		else if (str[idx] > 'z')
-			retrun (0);
-		idx++;
 	}
 	return (1);
 }

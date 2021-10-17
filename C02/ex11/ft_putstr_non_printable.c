@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 18:39:46 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/16 18:39:53 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/17 09:55:51 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 
 void	ft_printf_hex(unsigned char i)
 {
-	char *hex;
+	char	*hex;
 
 	hex = "0123456789abcdef";
 	ft_putchar(hex[i / 16]);
@@ -28,7 +28,7 @@ void	ft_printf_hex(unsigned char i)
 
 void	ft_putstr_non_printable(char *str)
 {
-	unsigned char i;
+	unsigned char	i;
 
 	while (*str != '\0')
 	{

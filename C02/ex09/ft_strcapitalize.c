@@ -6,11 +6,11 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 20:27:32 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/16 17:57:08 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/17 09:54:09 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		is_true(char c)
+int	is_true(char c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (1);
@@ -23,8 +23,8 @@ int		is_true(char c)
 
 char	*ft_strcapitalize(char *str)
 {
-	int i;
-	int capital;
+	int	i;
+	int	capital;
 
 	i = 0;
 	capital = 1;
