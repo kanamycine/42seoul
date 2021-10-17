@@ -6,11 +6,11 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 23:04:50 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/14 17:15:59 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/17 09:27:50 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
+int	ft_str_is_numeric(char *str)
 {
 	int	idx;
 
