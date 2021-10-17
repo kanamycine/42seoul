@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 22:23:17 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/16 22:25:17 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/17 18:00:45 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@ char	*ft_strcat(char *dest, char *src)
 		i++;
 		j++;
 	}
-	(dest + i) = '\0';
+	*(dest + i) = '\0';
 	return (dest);
 }
