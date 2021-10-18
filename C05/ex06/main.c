@@ -5,45 +5,38 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/16 23:54:24 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/17 00:34:25 by jinychoi         ###   ########.fr       */
+/*   Created: 2021/10/18 22:28:14 by jinychoi          #+#    #+#             */
+/*   Updated: 2021/10/18 23:16:06 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 
-int	ft_atoi(char *str)
+int	ft_is_prime(int nb)
 {
 	int	i;
-	int	cnt;
-	int	res;
-	i = 0;
-	printf("%d", i);
-	while ((9 <= *(str + i) && *(str + i) <= 13) || *(str + i) == 32)
+
+	i = 2;
+	if (nb <= 1)
+		return (0);
+	while (i <= (nb / 2))
 	{
-		i++;
-		printf("%d", i);
+		if (!(nb % i))
+			return (0);
+		else
+			i++;
 	}
-	cnt = 0;
-	while (*(str + i) == '+' || *(str + i) == '-')
-	{
-		if (*(str + i) == '-')
-			cnt++;
-		i++;
-	}
-	res = 0;
-	while (*(str + i))
-	{
-		res *= 10;
-		res = res + *(str + i) - 48;
-	}
-	if (cnt % 2 != 0)
-		res = (res * -1);
-	return (res);
+	return (1);
 }
 
+#include <stdio.h>
 int main(void)
 {
-	char *s = "   ---+--+01234506789ab567";
-	printf("%d", ft_atoi(s));
-	return (0);
+	printf("%d -> %d\n", -3965, ft_is_prime(-3965));
+	printf("%d -> %d\n", -12, ft_is_prime(-12));
+	printf("%d -> %d\n", 0, ft_is_prime(0));
+	printf("%d -> %d\n", 1, ft_is_prime(1));
+	printf("%d -> %d\n", 2, ft_is_prime(2));
+	printf("%d -> %d\n", 4219, ft_is_prime(4219));
+	printf("%d -> %d\n", 7853, ft_is_prime(7853));
+	printf("%d -> %d\n", 78989, ft_is_prime(78989));
+	printf("%d -> %d\n", 2147483647, ft_is_prime(2147483647));
 }

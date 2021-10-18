@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/16 23:47:08 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/19 01:20:26 by jinychoi         ###   ########.fr       */
+/*   Created: 2021/10/18 21:01:46 by jinychoi          #+#    #+#             */
+/*   Updated: 2021/10/18 21:33:05 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+int	ft_fibonacci(int index)
 {
-	int	i;
-
-	i = 0;
-	while (*(str + i) != '\0')
-	{
-		write(1, str + i, 1);
-		i ++;
-	}
+	if (index < 0)
+		return (-1);
+	if (index < 2)
+		return (index);
+	return (ft_fibonacci(index - 2) + ft_fibonacci(index - 1));
 }

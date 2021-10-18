@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/16 23:47:08 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/16 23:49:23 by jinychoi         ###   ########.fr       */
+/*   Created: 2021/10/18 19:32:48 by jinychoi          #+#    #+#             */
+/*   Updated: 2021/10/18 20:32:11 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+int	ft_iterative_factorial(int nb)
 {
-	int	i;
+	unsigned int	res;
 
-	i = 0;
-	while (*(str + i) != '\0')
+	res = 1;
+	if (nb < 0)
+		return (0);
+	while (nb > 0)
 	{
-		write(1, str + i, 1);
-		i ++;
+		res *= nb;
+		nb--;
 	}
-}
-
-int main(void)
-{
-	ft_putstr("HELLO WORLD!");
+	return (res);
 }

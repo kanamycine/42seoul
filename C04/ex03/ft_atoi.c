@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 23:54:24 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/17 00:56:00 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/19 01:24:37 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,4 @@ int	ft_atoi(char *str)
 	if (cnt % 2 != 0)
 		res = (res * -1);
 	return (res);
-}
-
-int main(void)
-{
-	char *s = " ---+--+1234ab567";
-	printf("%d", ft_atoi(s));
 }

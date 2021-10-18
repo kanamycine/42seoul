@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 16:26:43 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/18 17:06:45 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/19 01:27:19 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,9 +77,4 @@ void	ft_putnbr_base(int nbr, char *base)
 			ft_putnbr_base(number % len, base);
 		}
 	}
-}
-
-int main(void)
-{
-	return (0);
 }
