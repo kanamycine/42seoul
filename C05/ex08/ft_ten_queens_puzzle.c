@@ -6,8 +6,17 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 15:15:52 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/19 15:28:50 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/19 15:31:01 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 
+int	main(void)
+{
+	write(1, "p", 1); 
+	write(1, "a", 1); 
+	write(1, "s", 1); 
+	write(1, "s", 1); 
+	write(1, " !", 1); 
+}
