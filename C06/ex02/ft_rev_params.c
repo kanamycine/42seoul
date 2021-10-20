@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 18:53:35 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/19 18:56:59 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/10/19 23:23:03 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putchar(char a)
 {
-	write(1, &c, 1);
+	write(1, &a, 1);
 }
 
 int	main(int argc, char *argv[])
