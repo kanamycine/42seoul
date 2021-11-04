@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 15:43:38 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/12 13:43:49 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/11/04 21:19:43 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void	ft_print_alphabet(void)
 {
+
 	write(1, "abcdefghijklmnopqrstuvwxyz", 26);
 }
