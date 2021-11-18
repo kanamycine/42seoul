@@ -6,14 +6,13 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 16:28:38 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/24 16:28:52 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/11/18 16:10:15 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strcmp(char *s1, char *s2)
 {
 	unsigned int	i;
-
 	i = 0;
 	while (*(s1 + i) == *(s2 + i) && (*(s1 + i) != '\0' || *(s2 + i) != '\0'))
 		i++;
