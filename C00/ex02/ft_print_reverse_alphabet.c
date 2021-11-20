@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 15:48:49 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/12 13:44:10 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/11/20 14:47:17 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void	ft_print_reverse_alphabet(void)
 {
+
 	write(1, "zyxwvutsrqponmlkjihgfedcba", 26);
 }
