@@ -1,4 +1,5 @@
 NAME	= libft.a
+
 SRC		= srcs/ft_putchar.c srcs/ft_swap.c srcs/ft_putstr.c srcs/ft_strlen.c srcs/ft_strcmp.c
 FLAG	= -Wall -Wextra -Werror
 OBJECT	= $(SRC:.c=.o)
