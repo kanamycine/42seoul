@@ -6,12 +6,13 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 00:14:35 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/11/25 02:11:15 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/11/25 02:12:50 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "ft_stock_str.h"
+
 
 int	ft_length(char *str)
 {
