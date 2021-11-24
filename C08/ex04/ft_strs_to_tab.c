@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 00:14:35 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/24 00:42:48 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/11/25 02:11:15 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ char	*ft_strdup(char *src)
 	while (src[idx])
 	{
 		dest[idx] = src[idx];
+
 		idx++;
 	}
 	dest[idx] = '\0';
