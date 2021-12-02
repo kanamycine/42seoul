@@ -6,13 +6,14 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 23:04:50 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/17 09:45:16 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/12/02 22:13:11 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_numeric(char *str)
 {
 	int	idx;
+
 
 	idx = 0;
 	if (*str == '\0')
