@@ -6,7 +6,7 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 23:54:24 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/19 01:24:37 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/12/07 12:49:59 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int	ft_atoi(char *str)
 {
+
 	int	i;
 	int	cnt;
 	int	res;
