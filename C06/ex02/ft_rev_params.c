@@ -6,11 +6,12 @@
 /*   By: jinychoi <jinychoi@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 18:53:35 by jinychoi          #+#    #+#             */
-/*   Updated: 2021/10/19 23:23:03 by jinychoi         ###   ########.fr       */
+/*   Updated: 2021/12/29 19:17:03 by jinychoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
 
 void	ft_putchar(char a)
 {
